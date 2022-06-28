@@ -1,7 +1,6 @@
 @import '../../style/variables';
 @import '../../style/fonts';
 
-
 .button {
   display: flex;
   justify-content: center;
@@ -12,23 +11,26 @@
   align-items: center;
   text-align: center;
 
-  &--add_to_card{
+  &--add_to_card {
     font-family: 'BebasNeue';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-    &:hover{
-    background: #5B5A62; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    &:hover {
+      background: #5b5a62;
     }
-    &:disabled{
-    background: #A8A8A8;
+    &:disabled {
+      background: #a8a8a8;
     }
   }
+  &--cross_button {
+    width: 56px;
+    height: 56px;
+    background: #FFFFFF;
+  }
 }
-
-  

@@ -1,0 +1,54 @@
+@import '../../style/fonts';
+.input {
+  font-family: Helios; // заменить надо на Helios
+  max-width: 480px;
+  font-size: 16px;
+  
+  font-style: normal;
+ 
+  font-size: 16px;
+  line-height: 32px;
+  align-items: center;
+  border: 1px solid #E7E7E7;
+  
+
+  
+
+  &__input {
+   
+    padding: 18px 20px;
+    background-color: #ffffff;
+    color: #8d8e97;
+    outline: 2px solid transparent;
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  &__input:focus {
+    outline-color: #E7E7E7;;
+  }
+
+  &__input:disabled {
+    outline-color: #E7E7E7;;
+    cursor: not-allowed;
+    background-color: #E7E7E7;
+  }
+
+  &__input--error,
+  &__input--error:focus {
+    outline-color: #FC857F;
+  }
+  &__label ~ &__input {
+    margin-top: 16px;
+  }
+
+  &__input ~ &__error {
+    margin-top: 16px;
+  }
+
+  &__error {
+    display: block;
+    color: #fd3419;
+  }
+}
