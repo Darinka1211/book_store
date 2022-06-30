@@ -1,26 +1,16 @@
-import React, {ReactElement} from 'react';
-
+import React from 'react';
 import './App.scss';
-import { Button } from "./components/Button/Button"
-import {Input} from "./components/Input/Input"
+import { Button } from './components/Button';
 
+import { Pagination } from './components/Pagination/Pagination';
 
 function App() {
-   return (
+  return (
     <div className="App">
-     <h1>Hello</h1>
-     <Button className="button--add_to_card"  text="add to card" />
-     <Input title="Title" placeholder="Placeholder" />
-      <Input
-        type="email"
-        title="Title"
-        placeholder="Placeholder"
-        error={true}
-        
-        disabled
-      />
-      <Input type="password" title="Title" placeholder="Placeholder" />
-   
+      <h1>Hello</h1>
+<Button className='button--add_to_card' text='add to card'  />
+
+      
     </div>
   );
 }
